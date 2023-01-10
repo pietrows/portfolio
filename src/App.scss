@@ -1,0 +1,151 @@
+$dark: #27282e;
+$blue: #5865e3;
+$gray: #7b7e8e;
+$white: #ffffff;
+$orange: #F1791C;
+
+body {
+  background-color: $dark !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#myLinks {
+  display: none;
+  & a {
+    position: relative;
+    z-index: 2;
+    background-color: $gray;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+  a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+}
+.topnav {
+    height: 100%;
+    @media (min-width: 991px) {
+      display: none;
+    }
+    a {
+      color: $dark;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+  a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu {
+  background-color: $white;
+  height: 70px;
+  top: 0;
+  &__list {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    
+    &--item {
+      margin: 0 20px;
+      color: $dark;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 7%;
+  &::after {
+    content: "";
+    background-color: $blue;
+    width: 40%;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+  &__avatar {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1200px) {
+    display: unset !important;
+      right: 34.4%;
+    }
+    &--button {
+      border: 0;
+      border-radius: 50px;
+      font-size: 30px;
+      padding: 10px 25px;
+      font-family: "Syncopate", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $white;
+      margin-bottom: 90px;
+    @media (min-width: 1200px) {
+      margin-bottom: unset !important;
+      margin-right: -50px;
+    }
+      z-index: 2;
+      position: relative;
+      background-color: $orange;
+
+    }
+  }
+}
+.title {
+  color: $white;
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  width: fit-content;
+  margin-right: 16px;
+  @media (min-width: 1200px) {
+    font-size: 77px;
+    margin-right: 26px;
+  }
+  &__name {
+    background-color: #5865e3;
+  }
+  &__description {
+    font-size: 23px !important;
+    @media (min-width: 1200px) {
+      font-size: 77px !important;
+    }
+  }
+}
+
+
+.section {
+  &__header {
+    color: $blue;
+  }
+}
