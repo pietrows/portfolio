@@ -31,7 +31,8 @@ a {
   }
 }
 .topnav {
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
     @media (min-width: 991px) {
       display: none;
     }
@@ -42,11 +43,9 @@ a {
       font-size: 17px;
       display: block;
     }
-  a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+  button.icon {
+    background-color: transparent;
+    border: unset;
   }
 }
 

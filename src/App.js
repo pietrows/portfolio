@@ -54,14 +54,14 @@ useEffect(() => {
               <a className="d-flex align-items-center" href="#home">
                 <img width={40} height={40} src={logo} alt="logo" />
               </a>
-              <a className="icon" onClick={myFunction}>
+              <button className="icon" onClick={myFunction}>
                 <svg width="35" height="35" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
                     d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
                   />
                 </svg>
-              </a>
+              </button>
             </div>
             <div id="myLinks">
               <a href="#news">About</a>
@@ -75,11 +75,9 @@ useEffect(() => {
         <div className="row">
           <div className="d-flex col-md-12 mt-5">
             <h1 className="title">HELLO, I'M</h1>
-            <h1>
-              <span className="title title__name">
+            <h1 className="title title__name">
                 Antonio
-                <br /> Pietro
-              </span>
+                Pietro
             </h1>
           </div>
           <h1 className="title title__description">
